@@ -12,16 +12,10 @@ public class Main {
     }
 
     public static void main(String[] args) {
-        int[] array = setArrayRandomNumbers();
-        double sum = 0;
-        double days = 30;
-        double average = 0;
-        for (int i = 0; i < array.length; i++) {
-            sum = sum + array[i];
-            average = sum / days;
+        char[] reverseFullName = {'n', 'a', 'v', 'I', ' ', 'v', 'o', 'n', 'a', 'v', 'I'};
+        for (int i = reverseFullName.length - 1; i >= 0; i--) {
+            System.out.print(reverseFullName[i]);
         }
-        System.out.println("Средняя сумма трат за месяц составила " + average + " рублей.");
-
 
     }
 }
