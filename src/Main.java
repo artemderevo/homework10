@@ -12,10 +12,21 @@ public class Main {
     }
 
     public static void main(String[] args) {
-        char[] reverseFullName = {'n', 'a', 'v', 'I', ' ', 'v', 'o', 'n', 'a', 'v', 'I'};
-        for (int i = reverseFullName.length - 1; i >= 0; i--) {
-            System.out.print(reverseFullName[i]);
+        int[] array = setArrayRandomNumbers();
+        int max = array[0];
+        int min = array[0];
+        for (int num : array) {
+            if (num < min) {
+                min = num;
+            }
         }
+        for (int num2 : array) {
+            if (num2 > max) {
+                max = num2;
+            }
+        }
+        System.out.println("Минимальная сумма трат за день составила " + min + " рублей. " + "Максимальная сумма трат за день составила " + max + " рублей.");
+
 
     }
 }
