@@ -18,8 +18,8 @@ public class Main {
         double average = 0;
         for (int i = 0; i < array.length; i++) {
             sum = sum + array[i];
-            average = sum / days;
         }
+        average = sum / days;
         System.out.println("Средняя сумма трат за месяц составила " + average + " рублей.");
 
 
